@@ -4,22 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <ul>
-        <li>Scissors cuts Paper</li>
-        <li>Paper covers Rock</li>
-        <li>Lizard poisons Spock</li>
-        <li>Spock smashes Scissors</li>
-        <li>Scissors decapitates Lizard</li>
-        <li>Lizard eats Paper</li>
-        <li>Paper disproves Spock</li>
-        <li>Spock vaporizes Rock</li>
-        <li>Rock crushes Scissors</li>
-        <li>Rock crushes Lizard</li>
-    </ul>
+    
+    <div class="header">
+        Rock Paper Scissors Lizard Spock
+    </div>
+    <div class="game-ui">
+        <div class="game-viewer">
+            <div class="game-player-card">
+                <div class="game-player-card-image">
+                </div>
+                <span>Player</span>
+            </div>
+            <div class="game-info">
+                <div class="game-message-wrapper">
+                    <span class="game-message">Choose your weapon to defeat Mighty Shelbot!</span>
+                    <span class="game-reset">1st to is a winner</span> 
+                </div>
+                <span>Score</span>
+                <div class="game-score">
+                    <span id="player-score">0</span> : <span id="computer-score">0</span> 
+                </div>
+
+            </div>
+            <div class="game-shelbot-card">
+                <div class="game-shelbot-card-image">
+                </div>
+                <span>Shelbot</span>
+            </div>
+        </div>
+        <div class="game-weapon-choise">
+            <div class="choise" id="rock"><img src="/images/rock-choise.png"
+                width="50"></div>
+            <div class="choise" id="paper"><img src="/images/paper-choise.png" 
+                width="35"></div>
+            <div class="choise" id="scissors"><img src="/images/scissors-choise.png"
+                width="50"></div>
+            <div class="choise" id="lizard"><img src="/images/lizard-choise.png" 
+                width="50"></div>
+            <div class="choise" id="spock"><img src="/images/spock-choise.png" 
+                width="45"></div>
+        </div>
+    </div>
+    <div class="rules">
+            <img src="/images/rules.png" width="300" height="300">
+        <div class="rules-info">
+            <h2>Rules</h2>
+            <div class="rules-list">
+                <ul>
+                    <li>Rock crushes Lizard</li>
+                    <li>Rock crushesh Scissors</li>
+                    <li>Paper covers Rock</li>
+                    <li>Paper disproves Spock</li>
+                    <li>Scissors decapitates Lizard</li>
+                </ul>
+                <img src="/images/img-fun.png" width="250" height="250">
+                <ul>
+                    <li>Scissors cuts Paper</li>
+                    <li>Lizard poisons Spock</li>
+                    <li>Lizard eats Paper</li>
+                    <li>Spock smashes Scissors</li>
+                    <li>Spock vaporizes Rock</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>© 2023</span><a href="https://www.theodinproject.com/">The Odin Project</a>
+    </div>
+
 </body>
 </html>

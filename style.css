@@ -1,4 +1,245 @@
 body {
-    background-color: #000000;
-    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #040D12;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+h2 {
+    text-align: center;
+}
+a { 
+    color: inherit;
+    text-decoration: none;
+} 
+
+.header {
+    padding: 36px;
+    border-radius: 0px 0px 16px 16px;
+    background: #183D3D;
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.game-ui, .rules {
+    flex-shrink: 0;
+    background-color: #183D3D;
+    border-radius: 16px;
+    display: flex;
+    overflow: visible;
+}
+
+.game-ui {
+    margin: 24px 72px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.rules {
+    margin: 0px 72px;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    background-color: #183D3D;
+    flex-shrink: 0;
+    height: 3.39vh;
+    margin-top: 24px;
+    background: #1E1E1E;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.game-viewer {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    gap:32px;
+    height: 18em;
+}
+
+.game-player-card, 
+.game-shelbot-card
+{
+    width: 25em;
+    border: 4px solid #0D2727;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    align-items: center;
+    gap: 16px;
+    font-size: 24px;
+}
+.game-info {
+    background-color: #0D2727;
+    border: 4px solid #040D12;
+    border-radius: 16px;
+    width: 40em;
+    
+}
+.game-weapon-choise {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    align-items: center;
+    gap: 32px;
+}
+
+.game-player-card-image,
+.game-shelbot-card-image {
+    width: 400px;
+    height: 200px;
+    border: 4px solid #040D12;
+    border-radius: 16px;
+    background-image: url("/images/img-fun.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-message-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #183D3D;
+    background-color: #040D12;
+    width: 400px;
+    height: 125px;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+}
+.game-score {
+    display: flex;
+    border: 4px solid #040D12;
+    background-color: #183D3D;
+    width: 250px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-weight: 800;
+}
+.rules{
+    display: flex;
+    padding: 24px;
+    flex-wrap: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rules-info {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0D2727;
+    width: 60em;
+}
+
+.rules-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.choise {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px solid #5fc5ba;
+    background-color: #183D3D;
+    margin-bottom: -48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choise:hover {
+    scale: 1.5;
+    transition: 0.3s;
+}
+/*
+animations
+*/
+#player-card-rock {
+    background-image: url("/images/p-rock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+#shelbot-card-rock {
+    background-image: url("/images/s-rock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+#player-card-paper {
+    background-image: url("/images/p-paper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+#shelbot-card-paper {
+    background-image: url("/images/s-paper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+#player-card-scissors {
+    background-image: url("/images/p-scissors.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+#shelbot-card-scissors {
+    background-image: url("/images/s-scissors.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+#player-card-lizard {
+    background-image: url("/images/p-lizard.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+#shelbot-card-lizard {
+    background-image: url("/images/s-lizard.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+#player-card-spock {
+    background-image: url("/images/p-spock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+#shelbot-card-spock {
+    background-image: url("/images/s-spock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
 }
