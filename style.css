@@ -184,61 +184,61 @@ a {
 animations
 */
 #player-card-rock {
-    background-image: url("/images/p-rock.png");
+    background-image: url("images/p-rock.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s;
 }
 #shelbot-card-rock {
-    background-image: url("/images/s-rock.png");
+    background-image: url("images/s-rock.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s;
 }
 #player-card-paper {
-    background-image: url("/images/p-paper.png");
+    background-image: url("images/p-paper.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s;
 }
 #shelbot-card-paper {
-    background-image: url("/images/s-paper.png");
+    background-image: url("images/s-paper.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s;
 }
 #player-card-scissors {
-    background-image: url("/images/p-scissors.png");
+    background-image: url("images/p-scissors.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s;
 }
 #shelbot-card-scissors {
-    background-image: url("/images/s-scissors.png");
+    background-image: url("images/s-scissors.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s;
 }
 #player-card-lizard {
-    background-image: url("/images/p-lizard.png");
+    background-image: url("images/p-lizard.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s;
 }
 #shelbot-card-lizard {
-    background-image: url("/images/s-lizard.png");
+    background-image: url("images/s-lizard.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s;
 }
 #player-card-spock {
-    background-image: url("/images/p-spock.png");
+    background-image: url("images/p-spock.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s;
 }
 #shelbot-card-spock {
-    background-image: url("/images/s-spock.png");
+    background-image: url("images/s-spock.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.3s;
